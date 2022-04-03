@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ocultar {
+            display: none;
+        }
+
+        .ocultar.active {
+            display: block !important;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <div>
+            <label for="figura">Figura</label>
+            <select name="figura" id="figura" name="figura" onchange="verOcultar()">
+                <option>Seleccionar</option>
+                <option value="1">Cuadrado</option>
+                <option value="2">Rectángulo</option>
+                <option value="3">Triángulo</option>
+                <option value="4">Rombo</option>
+                <option value="5">Trapecio</option>
+                <option value="6">Circulo</option>
+                <option value="7">Esfera</option>
+                <option value="8">Cubo</option>
+                <option value="9">Paralelepípedo</option>
+                <option value="10">Cilindro</option>
+                <option value="11">Cono</option>
+            </select>
+
+        </div>
+        <hr>
+        <div class="ocultar" id="baseAltura">
+            <div>
+                <!-- VALOR DE ALTO DE LA FIGURA -->
+                <label for="base">Base: </label>
+                <input type="number" id="base" name="base">
+            </div>
+            <div>
+                <!-- VALOR DE ANCHO DE LA FIGURA -->
+                <label for="altura">Altura: </label>
+                <input type="number" id="altura" name="altura">
+            </div>
+        </div>
+        <div class="ocultar" id="rombo">
+            <div>
+                <!-- VALOR DE LADO DE LA FIGURA -->
+                <label for="lado">lado : </label>
+                <input type="number" id="lado" name="lado">
+            </div>
+
+            <div>
+                <!-- VALOR DE ALTO DE LA FIGURA -->
+                <label for="diagonal_mayor">diagonal mayor: </label>
+                <input type="number" id="diagonal_mayor" name="diagonal_mayor">
+            </div>
+            <div>
+                <!-- VAOLR DE ANCHO DE LA FIGURA -->
+                <label for="diagonal_menor">diagonal menor: </label>
+                <input type="number" id="diagonal_menor" name="diagonal_menor">
+            </div>
+
+
+        </div>
+        <div class="ocultar" id="trapecio">
+            <div>
+                <!-- VAOLR DE AREA DE LA FIGURA -->
+                <label for="base_mayor">base mayor: </label>
+                <input type="number" id="base_mayor" name="base_mayor">
+            </div>
+            <div>
+                <!-- VAOLR DE AREA DE LA FIGURA -->
+                <label for="base_menor">base menor: </label>
+                <input type="number" id="base_menor" name="base_menor">
+            </div>
+            <div>
+                <!-- VAOLR DE AREA DE LA FIGURA -->
+                <label for="altura_trapecio"> altura trapecio: </label>
+                <input type="number" id="altura_trapecio" name="altura_trapecio">
+            </div>
+
+        </div>
+        <div class="ocultar" id="circulo">
+            <div>
+                <!-- VAOLR DE AREA DE LA FIGURA -->
+                <div>
+                    <label for="radio">radio: </label>
+                    <input type="number" id="radio" name="radio">
+                </div>
+            </div>
+            <hr>
+
+        </div>
+        <div class="ocultar" id="esfera">
+            <!-- VAOLR DE AREA DE LA FIGURA -->
+            <label for="radio_esfera">radio esfera: </label>
+            <input type="number" id="radio_esfera" name="radio_esfera">
+        </div>
+        <div class="ocultar" id="cubo">
+            <!-- VAOLR DE AREA DE LA FIGURA -->
+            <label for="ladoCubo">lado: </label>
+            <input type="number" id="ladoCubo" name="ladoCubo">
+        </div>
+        <div class="ocultar" id="Paralelepipedo">
+            <div>
+                <!-- VALOR DE LARGO DE LA FIGURA -->
+                <label for="largo_paralelepipedo">largo : </label>
+                <input type="number" id="largo_paralelepipedo" name="largo_paralelepipedo">
+            </div>
+
+            <div>
+                <!-- VALOR DE ALTO DE LA FIGURA -->
+                <label for="alto_paralelepipedo">alto paralelepípedo: </label>
+                <input type="number" id="alto_paralelepipedo" name="alto_paralelepipedo">
+            </div>
+            <div>
+                <!-- VAOLR DE ANCHO DE LA FIGURA -->
+                <label for="ancho_paralelepipedo">ancho paralelepípedo: </label>
+                <input type="number" id="ancho_paralelepipedo" name="ancho_paralelepipedo">
+            </div>
+        </div>
+        <div class="ocultar" id="cilindro">
+            <div>
+                <!-- VALOR DE RADIO DE LA FIGURA -->
+                <label for="radio_cilindro">radio cilindro : </label>
+                <input type="number" id="radio_cilindro" name="radio_cilindro">
+            </div>
+
+            <div>
+                <!-- VALOR DE ALTO DE LA FIGURA -->
+                <label for="alto_cilindro">alto cilindro : </label>
+                <input type="number" id="alto_cilindro" name="alto_cilindro">
+            </div>
+        </div>
+        <div class="ocultar" id="cono">
+            <div>
+                <!-- VALOR DE ALTURA DE LA FIGURA -->
+                <label for="altura_cono">altura cono : </label>
+                <input type="number" id="altura_cono" name="altura_cono">
+            </div>
+
+            <div>
+                <!-- VALOR DE RADIO DE LA FIGURA -->
+                <label for="radio_cono">radio cono : </label>
+                <input type="number" id="radio_cono" name="radio_cono">
+            </div>
+
+            <div>
+                <!-- VALOR DE GENERATRIZ DE LA FIGURA -->
+                <label for="generatriz">generatriz: </label>
+                <input type="number" id="generatriz" name="generatriz">
+            </div>
+        </div>
+
+        <button onclick="calcular()">calcular</button>
+        <hr>
+        <article>
+            <p>Perimertro: <span id="resultadoPerimetro"></span> </p>
+            <p>Area: <span id="resultadoArea"></span> </p>
+            <p>volumen:<span id="resultadoVolumen"></span> </p>
+        </article>
+    </main>
+    <script>
+        function verOcultar() {
+            let cl = document.getElementsByClassName('ocultar');
+            document.getElementById('resultadoArea').textContent = ''
+            document.getElementById('resultadoPerimetro').textContent = ''
+            document.getElementById('resultadoVolumen').textContent = ''
+            for (let i = 0; i < cl.length; i++) {
+                if (document.getElementById(cl[i].id).classList.contains('active')) {
+                    document.getElementById(cl[i].id).classList.remove('active')
+                }
+            }
+
+            let figura = document.getElementById('figura').value;
+            switch (Number(figura)) {
+                case 1:
+                case 2:
+                case 3:
+                    document.getElementById('baseAltura').classList.add('active');
+                    break;
+                case 4:
+                    document.getElementById('rombo').classList.add('active');
+                    break;
+                case 5:
+                    document.getElementById('trapecio').classList.add('active');
+                    break;
+                case 6:
+                    document.getElementById('circulo').classList.add('active');
+                    break;
+                case 7:
+                    document.getElementById('esfera').classList.add('active');
+                    break;
+                case 8:
+                    document.getElementById('cubo').classList.add('active');
+                    break;
+                case 9:
+                    document.getElementById('Paralelepipedo').classList.add('active');
+                    break;
+                case 10:
+                    document.getElementById('cilindro').classList.add('active');
+                    break;
+                case 11:
+                    document.getElementById('cono').classList.add('active');
+                    break;
+                default:
+                    break;
+            }
+        }
+
+        function calcular() {
+            let figura = document.getElementById('figura').value;
+
+            switch (Number(figura)) {
+                case 1:
+                case 2:
+                    document.getElementById('resultadoArea').textContent = area();
+                    document.getElementById('resultadoPerimetro').textContent = perimetroCuadrado();
+                    break;
+                case 3:
+                    document.getElementById('resultadoArea').textContent = area() / 2
+                    document.getElementById('resultadoPerimetro').textContent = perimetroTriangulo()
+                    break;
+                case 4:
+                    document.getElementById('resultadoArea').textContent = areaRombo()
+                    document.getElementById('resultadoPerimetro').textContent = perimetroRombo()
+                    break;
+                case 5:
+                    document.getElementById('resultadoArea').textContent = areaTrapecio()
+                    document.getElementById('resultadoPerimetro').textContent = perimetroTrapecio()
+                    break;
+                case 6:
+                    document.getElementById('resultadoArea').textContent = areaCirculo()
+                    document.getElementById('resultadoPerimetro').textContent = perimetroCirculo()
+                    break;
+                case 7:
+                    document.getElementById('resultadoArea').textContent = areaEsfera()
+                    document.getElementById('resultadoVolumen').textContent = volumenEsfera()
+                    break;
+                case 8:
+                    document.getElementById('resultadoArea').textContent = areaCubo()
+                    document.getElementById('resultadoVolumen').textContent = volumenCubo()
+                    break;
+                case 9:
+                    document.getElementById('resultadoArea').textContent = areaParalelepipedo()
+                    document.getElementById('resultadoVolumen').textContent = volumenParalelepipedo()
+                    break;
+                case 10:
+                    document.getElementById('resultadoArea').textContent = areaCilindro()
+                    document.getElementById('resultadoVolumen').textContent = volumenCilindro()
+                    break;
+                case 11:
+                    document.getElementById('resultadoArea').textContent = areaCono()
+                    document.getElementById('resultadoVolumen').textContent = volumenCono()
+                    break;
+                default:
+                    break;
+            }
+
+        }
+
+        /* FUNCION PARA CALCULAR AREA */
+        function area() {
+            let base = Number(document.getElementById('base').value);
+            let altura = Number(document.getElementById('altura').value);
+            return base * altura;
+        }
+
+        /* FUNCION PARA CALCULAR AREA DE CUADRADO*/
+        function perimetroCuadrado() {
+            let base = Number(document.getElementById('base').value);
+            let altura = Number(document.getElementById('altura').value);
+            return base * 2 + altura * 2;
+        }
+
+        /* FUNCION PARA CALCULAR PERIMETRO DE TRIANGULO */
+        function perimetroTriangulo() {
+            let base = Number(document.getElementById('base').value);
+            let altura = Number(document.getElementById('altura').value);
+            return base + altura * 2;
+        }
+
+        /* FUNCION PARA CALCULAR AREA DE UN ROMBO */
+        function areaRombo() {
+            let diagonal_mayor = Number(document.getElementById('diagonal_mayor').value);
+            let diagonal_menor = Number(document.getElementById('diagonal_menor').value);
+            return diagonal_mayor * diagonal_menor / 2;
+        }
+
+        /* FUNCION PARA CALCULAR PERIMETRO DE UN ROMBO */
+        function perimetroRombo() {
+            let lado = Number(document.getElementById('lado').value);
+            return lado * 4;
+        }
+
+        /* FUNCION PARA CALCULAR PERIMETRO DE UN TRAPECIO */
+        function areaTrapecio() {
+            let base_mayor = Number(document.getElementById('base_mayor').value);
+            let base_menor = Number(document.getElementById('base_menor').value);
+            let altura_trapecio = Number(document.getElementById('altura_trapecio').value);
+            return (base_mayor + base_menor) * altura_trapecio / 2;
+        }
+
+        /* FUNCION PARA CALCULAR PERIMETRO DE UN TRAPECIO */
+        function perimetroTrapecio() {
+            let base_mayor = Number(document.getElementById('base_mayor').value);
+            let base_menor = Number(document.getElementById('base_menor').value);
+            let altura_trapecio = Number(document.getElementById('altura_trapecio').value);
+            return base_mayor + base_menor + altura_trapecio * 2;
+        }
+
+        /* FUNCION PARA CALCULAR AREA DE UN CIRCULO */
+        function areaCirculo() {
+            let radio = Number(document.getElementById('radio').value);
+            return Math.pow(radio, 2) * 3.1416;
+        }
+
+        /* FUNCION PARA CALCULAR PERIMETRO DE UN CIRCULO */
+        function perimetroCirculo() {
+            let radio = Number(document.getElementById('radio').value);
+            return 2 * 3.1416 * radio;
+        }
+        /* FUNCION PARA CALCULAR AREA DE UNA ESFERA*/
+        function areaEsfera() {
+            let radio_esfera = Number(document.getElementById('radio_esfera').value);
+            return 4 * 3.1416 * (Math.pow(radio_esfera, 2));
+        }
+
+        /* FUNCION PARA CALCULAR VOLUMEN DE UNA ESFERA*/
+        function volumenEsfera() {
+            let radio_esfera = Number(document.getElementById('radio_esfera').value);
+            return 4 / 3 * 3.1416 * (Math.pow(radio_esfera, 3));
+        }
+
+        /* FUNCION PARA CALCULAR AREA DE UN CUBO*/
+        function areaCubo() {
+            let ladoCubo = Number(document.getElementById('ladoCubo').value);
+            return ladoCubo * ladoCubo * 6;
+        }
+
+        /* FUNCION PARA CALCULAR VOLUMEN DE UN CUBO*/
+        function volumenCubo() {
+            let ladoCubo = Number(document.getElementById('ladoCubo').value);
+            return Math.pow(ladoCubo, 3);
+        }
+
+        /* FUNCION PARA CALCULAR AREA DE UN PARALELEPIPEDO*/
+        function areaParalelepipedo() {
+            let largo_paralelepipedo = Number(document.getElementById('largo_paralelepipedo').value);
+            let alto_paralelepipedo = Number(document.getElementById('alto_paralelepipedo').value);
+            let ancho_paralelepipedo = Number(document.getElementById('ancho_paralelepipedo').value);
+
+            let p1 = 2 * (alto_paralelepipedo * largo_paralelepipedo);
+            let p2 = largo_paralelepipedo * ancho_paralelepipedo;
+            let p3 = alto_paralelepipedo * ancho_paralelepipedo
+
+            return p1 + p2 + p3;
+        }
+
+        /* FUNCION PARA CALCULAR VOLUMEN DE UN PARALELEPIPEDO*/
+        function volumenParalelepipedo() {
+            let largo_paralelepipedo = Number(document.getElementById('largo_paralelepipedo').value);
+            let alto_paralelepipedo = Number(document.getElementById('alto_paralelepipedo').value);
+            let ancho_paralelepipedo = Number(document.getElementById('ancho_paralelepipedo').value);
+            return alto_paralelepipedo * largo_paralelepipedo * ancho_paralelepipedo;
+        }
+
+        /* FUNCION PARA CALCULAR AREA DE UN CILINDRO*/
+        function areaCilindro() {
+            let radio_cilindro = Number(document.getElementById('radio_cilindro').value);
+            let alto_cilindro = Number(document.getElementById('alto_cilindro').value);
+            return 2 * 3.1416 * radio_cilindro * (alto_cilindro + radio_cilindro);
+        }
+
+        /* FUNCION PARA CALCULAR VOLUMEN DE UN CILINDRO*/
+        function volumenCilindro() {
+            let radio_cilindro = Number(document.getElementById('radio_cilindro').value);
+            let alto_cilindro = Number(document.getElementById('alto_cilindro').value);
+            return (3.1416 * Math.pow(radio_cilindro, 2)) * alto_cilindro;
+            //return (3.1416 * (Math.pow(radio_esfera, 2))) * alto_cilindro;
+        }
+
+        /* FUNCION PARA CALCULAR AREA DE UN CONO*/
+        function areaCono() {
+            let altura_cono = Number(document.getElementById('altura_cono').value);
+            let radio_cono = Number(document.getElementById('radio_cono').value);
+            let generatriz = Number(document.getElementById('generatriz').value);
+            return (3.1416 * radio_cono * generatriz) + (3.1416 * Math.pow(radio_cono, 2));
+        }
+
+        /* FUNCION PARA CALCULAR VOLUMEN DE UN CONO*/
+        function volumenCono() {
+            let altura_cono = Number(document.getElementById('altura_cono').value);
+            let radio_cono = Number(document.getElementById('radio_cono').value);
+            let generatriz = Number(document.getElementById('generatriz').value);
+            return (3.1416 * Math.pow(radio_cono, 2) * altura_cono / 3);
+        }
+
+    </script>
+</body>
+
+</html>
