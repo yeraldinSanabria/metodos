@@ -1,0 +1,360 @@
+<svg id="diagram" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 1582.90576171875px;" viewBox="0 0 1582.90576171875 663.9573822021484"><style>
+
+
+#diagram .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  color: #333; }
+
+#diagram .node rect,
+#diagram .node circle,
+#diagram .node ellipse,
+#diagram .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#diagram .node.clickable {
+  cursor: pointer; }
+
+#diagram .arrowheadPath {
+  fill: #333333; }
+
+#diagram .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#diagram .edgeLabel {
+  background-color: #e8e8e8; }
+
+#diagram .cluster rect {
+  fill: #ffffde !important;
+  stroke: #aaaa33 !important;
+  stroke-width: 1px !important; }
+
+#diagram .cluster text {
+  fill: #333; }
+
+#diagram div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#diagram .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#diagram text.actor {
+  fill: black;
+  stroke: none; }
+
+#diagram .actor-line {
+  stroke: grey; }
+
+#diagram .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#diagram .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#diagram #arrowhead {
+  fill: #333; }
+
+#diagram #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#diagram .messageText {
+  fill: #333;
+  stroke: none; }
+
+#diagram .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#diagram .labelText {
+  fill: black;
+  stroke: none; }
+
+#diagram .loopText {
+  fill: black;
+  stroke: none; }
+
+#diagram .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#diagram .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#diagram .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px; }
+
+#diagram .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#diagram .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#diagram .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#diagram .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#diagram .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#diagram .section2 {
+  fill: #fff400; }
+
+#diagram .section1,
+#diagram .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#diagram .sectionTitle0 {
+  fill: #333; }
+
+#diagram .sectionTitle1 {
+  fill: #333; }
+
+#diagram .sectionTitle2 {
+  fill: #333; }
+
+#diagram .sectionTitle3 {
+  fill: #333; }
+
+#diagram .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px; }
+
+
+#diagram .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+
+#diagram .grid path {
+  stroke-width: 0; }
+
+
+#diagram .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#diagram .task {
+  stroke-width: 2; }
+
+#diagram .taskText {
+  text-anchor: middle;
+  font-size: 11px; }
+
+#diagram .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px; }
+
+#diagram .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#diagram .taskText0,
+#diagram .taskText1,
+#diagram .taskText2,
+#diagram .taskText3 {
+  fill: white; }
+
+#diagram .task0,
+#diagram .task1,
+#diagram .task2,
+#diagram .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#diagram .taskTextOutside0,
+#diagram .taskTextOutside2 {
+  fill: black; }
+
+#diagram .taskTextOutside1,
+#diagram .taskTextOutside3 {
+  fill: black; }
+
+
+#diagram .active0,
+#diagram .active1,
+#diagram .active2,
+#diagram .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#diagram .activeText0,
+#diagram .activeText1,
+#diagram .activeText2,
+#diagram .activeText3 {
+  fill: black !important; }
+
+
+#diagram .done0,
+#diagram .done1,
+#diagram .done2,
+#diagram .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#diagram .doneText0,
+#diagram .doneText1,
+#diagram .doneText2,
+#diagram .doneText3 {
+  fill: black !important; }
+
+
+#diagram .crit0,
+#diagram .crit1,
+#diagram .crit2,
+#diagram .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#diagram .activeCrit0,
+#diagram .activeCrit1,
+#diagram .activeCrit2,
+#diagram .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#diagram .doneCrit0,
+#diagram .doneCrit1,
+#diagram .doneCrit2,
+#diagram .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#diagram .doneCritText0,
+#diagram .doneCritText1,
+#diagram .doneCritText2,
+#diagram .doneCritText3 {
+  fill: black !important; }
+
+#diagram .activeCritText0,
+#diagram .activeCritText1,
+#diagram .activeCritText2,
+#diagram .activeCritText3 {
+  fill: black !important; }
+
+#diagram .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black; }
+
+#diagram g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 10px; }
+
+#diagram g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#diagram g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#diagram .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#diagram .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#diagram #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram .commit-id,
+#diagram .commit-msg,
+#diagram .branch-label {
+  fill: lightgrey;
+  color: lightgrey; }
+</style><style>#diagram {
+    color: rgb(0, 0, 0);
+    font: 16px -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }</style><g transform="translate(-12, -12)"><g class="output"><g class="clusters"><g class="cluster" id="subGraph1" transform="translate(406.7264404296875,197.98782348632812)" style="opacity: 1;"><rect width="773.452880859375" height="355.97564697265625" x="-386.7264404296875" y="-177.98782348632812"></rect><g class="label"><g transform="translate(0,0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"></div></foreignObject></g></g><text x="0" y="-163.98782348632812" fill="black" stroke="none" id="diagramText" style="text-anchor: middle;">function volumenParalelepipedo</text></g><g class="cluster" id="subGraph0" transform="translate(1200.1793212890625,343.9786911010742)" style="opacity: 1;"><rect width="773.452880859375" height="647.9573822021484" x="-386.7264404296875" y="-323.9786911010742"></rect><g class="label"><g transform="translate(0,0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"></div></foreignObject></g></g><text x="0" y="-309.97869873046875" fill="black" stroke="none" id="diagramText" style="text-anchor: middle;">function areaParalelepipedo</text></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M1200.1793212890625,83.99391174316406L1200.1793212890625,108.99391174316406L1200.1793212890625,133.99391174316406" marker-end="url(#arrowhead1212)" style="fill:none"></path><defs><marker id="arrowhead1212" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1200.1793212890625,172.98782348632812L1200.1793212890625,197.98782348632812L1200.1793212890625,222.98782348632812" marker-end="url(#arrowhead1213)" style="fill:none"></path><defs><marker id="arrowhead1213" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1200.1793212890625,261.9817352294922L1200.1793212890625,286.9817352294922L1200.1793212890625,311.9817352294922" marker-end="url(#arrowhead1214)" style="fill:none"></path><defs><marker id="arrowhead1214" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1200.1793212890625,350.97564697265625L1200.1793212890625,375.97564697265625L1200.1793212890625,400.97564697265625L1200.1793212890625,425.97564697265625" marker-end="url(#arrowhead1215)" style="fill:none"></path><defs><marker id="arrowhead1215" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1200.1793212890625,464.9695587158203L1200.1793212890625,489.9695587158203L1200.1793212890625,514.9695587158203" marker-end="url(#arrowhead1216)" style="fill:none"></path><defs><marker id="arrowhead1216" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M1200.1793212890625,553.9634704589844L1200.1793212890625,578.9634704589844L1200.6793212890625,604.4634704589844" marker-end="url(#arrowhead1217)" style="fill:none"></path><defs><marker id="arrowhead1217" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M406.7264404296875,83.99391174316406L406.7264404296875,108.99391174316406L406.7264404296875,133.99391174316406" marker-end="url(#arrowhead1218)" style="fill:none"></path><defs><marker id="arrowhead1218" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M406.7264404296875,172.98782348632812L406.7264404296875,197.98782348632812L406.7264404296875,222.98782348632812" marker-end="url(#arrowhead1219)" style="fill:none"></path><defs><marker id="arrowhead1219" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M406.7264404296875,261.9817352294922L406.7264404296875,286.9817352294922L407.2264404296875,312.4817352294922" marker-end="url(#arrowhead1220)" style="fill:none"></path><defs><marker id="arrowhead1220" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="froml16c12tol16c101" transform="translate(406.7264404296875,64.49695587158203)" style="opacity: 1;"><rect rx="5" ry="5" x="-345.291015625" y="-19.49695587158203" width="690.58203125" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-335.291015625,-9.496955871582031)"><foreignObject width="670.58203125" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let largo_paralelepipedo = Number(document.getElementById('largo_paralelepipedo').value);</div></foreignObject></g></g></g><g class="node" id="froml17c12tol17c99" transform="translate(406.7264404296875,153.4908676147461)" style="opacity: 1;"><rect rx="5" ry="5" x="-337.3873291015625" y="-19.49695587158203" width="674.774658203125" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-327.3873291015625,-9.496955871582031)"><foreignObject width="654.774658203125" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let alto_paralelepipedo = Number(document.getElementById('alto_paralelepipedo').value);</div></foreignObject></g></g></g><g class="node" id="froml18c12tol18c101" transform="translate(406.7264404296875,242.48477935791016)" style="opacity: 1;"><rect rx="5" ry="5" x="-351.7264404296875" y="-19.49695587158203" width="703.452880859375" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-341.7264404296875,-9.496955871582031)"><foreignObject width="683.452880859375" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let ancho_paralelepipedo = Number(document.getElementById('ancho_paralelepipedo').value);</div></foreignObject></g></g></g><g class="node" id="froml19c12tol19c85" transform="translate(406.7264404296875,331.4786911010742)" style="opacity: 1;"><polygon points="-19.49695587158203,0 560.498779296875,0 560.498779296875,-38.99391174316406 -19.49695587158203,-38.99391174316406 0,-19.49695587158203" transform="translate(-280.2493896484375,19.49695587158203)" style="fill:#99FF99;"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-270.2493896484375,-9.496955871582031)"><foreignObject width="540.498779296875" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">return alto_paralelepipedo * largo_paralelepipedo * ancho_paralelepipedo;</div></foreignObject></g></g></g><g class="node" id="froml3c12tol3c101" transform="translate(1200.1793212890625,64.49695587158203)" style="opacity: 1;"><rect rx="5" ry="5" x="-345.291015625" y="-19.49695587158203" width="690.58203125" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-335.291015625,-9.496955871582031)"><foreignObject width="670.58203125" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let largo_paralelepipedo = Number(document.getElementById('largo_paralelepipedo').value);</div></foreignObject></g></g></g><g class="node" id="froml4c12tol4c99" transform="translate(1200.1793212890625,153.4908676147461)" style="opacity: 1;"><rect rx="5" ry="5" x="-337.3873291015625" y="-19.49695587158203" width="674.774658203125" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-327.3873291015625,-9.496955871582031)"><foreignObject width="654.774658203125" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let alto_paralelepipedo = Number(document.getElementById('alto_paralelepipedo').value);</div></foreignObject></g></g></g><g class="node" id="froml5c12tol5c101" transform="translate(1200.1793212890625,242.48477935791016)" style="opacity: 1;"><rect rx="5" ry="5" x="-351.7264404296875" y="-19.49695587158203" width="703.452880859375" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-341.7264404296875,-9.496955871582031)"><foreignObject width="683.452880859375" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let ancho_paralelepipedo = Number(document.getElementById('ancho_paralelepipedo').value);</div></foreignObject></g></g></g><g class="node" id="froml7c12tol7c70" transform="translate(1200.1793212890625,331.4786911010742)" style="opacity: 1;"><rect rx="5" ry="5" x="-216.28546142578125" y="-19.49695587158203" width="432.5709228515625" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-206.28546142578125,-9.496955871582031)"><foreignObject width="412.5709228515625" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let p1 = 2 * (alto_paralelepipedo * largo_paralelepipedo);</div></foreignObject></g></g></g><g class="node" id="froml8c12tol8c65" transform="translate(1200.1793212890625,445.4726028442383)" style="opacity: 1;"><rect rx="5" ry="5" x="-205.63262939453125" y="-19.49695587158203" width="411.2652587890625" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-195.63262939453125,-9.496955871582031)"><foreignObject width="391.2652587890625" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let p2 = largo_paralelepipedo * ancho_paralelepipedo;</div></foreignObject></g></g></g><g class="node" id="froml9c12tol9c63" transform="translate(1200.1793212890625,534.4665145874023)" style="opacity: 1;"><rect rx="5" ry="5" x="-201.6807861328125" y="-19.49695587158203" width="403.361572265625" height="38.99391174316406"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-191.6807861328125,-9.496955871582031)"><foreignObject width="383.361572265625" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let p3 = alto_paralelepipedo * ancho_paralelepipedo;</div></foreignObject></g></g></g><g class="node" id="froml11c12tol11c32" transform="translate(1200.1793212890625,623.4604263305664)" style="opacity: 1;"><polygon points="-19.49695587158203,0 163.6258544921875,0 163.6258544921875,-38.99391174316406 -19.49695587158203,-38.99391174316406 0,-19.49695587158203" transform="translate(-81.81292724609375,19.49695587158203)" style="fill:#99FF99;"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-71.81292724609375,-9.496955871582031)"><foreignObject width="143.6258544921875" height="18.993911743164062"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">return p1 + p2 + p3;</div></foreignObject></g></g></g></g></g></g></svg>
