@@ -34,6 +34,8 @@
                 <option value="9">Paralelepípedo</option>
                 <option value="10">Cilindro</option>
                 <option value="11">Cono</option>
+                <option value="12">Roca</option>
+
             </select>
 
         </div>
@@ -158,15 +160,26 @@
                 <label for="generatriz">generatriz: </label>
                 <input type="number" id="generatriz" name="generatriz">
             </div>
-        </div>
+            <div class="ocultar" id="Roca">
+                <div>
+                    <!-- VALOR DE PUNTO INICIAL DE LA FIGURA -->
+                    <label for="punto_inicial_cm">punto inicial : </label>
+                    <input type="number" id="punto_inicial_cm" name="punto_inicial_cm">
+                </div>
+                <div>
+                    <!-- VALOR DE PUNTO FINAL DE LA FIGURA -->
+                    <label for="punto_final_cm">punto final : </label>
+                    <input type="number" id="punto_final_cm" name="punto_final_cm">
+                </div>
+            </div>
 
-        <button onclick="calcular()">calcular</button>
-        <hr>
-        <article>
-            <p>Perimertro: <span id="resultadoPerimetro"></span> </p>
-            <p>Area: <span id="resultadoArea"></span> </p>
-            <p>volumen:<span id="resultadoVolumen"></span> </p>
-        </article>
+            <button onclick="calcular()">calcular</button>
+            <hr>
+            <article>
+                <p>Perimertro: <span id="resultadoPerimetro"></span> </p>
+                <p>Area: <span id="resultadoArea"></span> </p>
+                <p>volumen:<span id="resultadoVolumen"></span> </p>
+            </article>
     </main>
     <script>
         function verOcultar() {
@@ -328,6 +341,7 @@
             let radio = Number(document.getElementById('radio').value);
             return 2 * 3.1416 * radio;
         }
+
         /* FUNCION PARA CALCULAR AREA DE UNA ESFERA*/
         function areaEsfera() {
             let radio_esfera = Number(document.getElementById('radio_esfera').value);
@@ -402,6 +416,13 @@
             let radio_cono = Number(document.getElementById('radio_cono').value);
             let generatriz = Number(document.getElementById('generatriz').value);
             return (3.1416 * Math.pow(radio_cono, 2) * altura_cono / 3);
+        }
+
+        /* FUNCION PARA CALCULAR VOLUMEN DE UN ROCA*/
+        function volumenoRoca() {
+            let punto_inicial_cm = Number(document.getElementById('punto_inicial_cm').value);
+            let punto_final_cm = Number(document.getElementById('punto_final_cm').value);
+            return punto_final_cm - punto_inicial_cm;
         }
 
     </script>

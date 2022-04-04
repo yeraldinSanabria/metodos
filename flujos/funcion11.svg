@@ -1,0 +1,360 @@
+<svg id="diagram" width="100%" xmlns="http://www.w3.org/2000/svg" style="max-width: 718.5943603515625px;" viewBox="0 0 718.5943603515625 282.98406982421875"><style>
+
+
+#diagram .label {
+  font-family: 'trebuchet ms', verdana, arial;
+  color: #333; }
+
+#diagram .node rect,
+#diagram .node circle,
+#diagram .node ellipse,
+#diagram .node polygon {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1px; }
+
+#diagram .node.clickable {
+  cursor: pointer; }
+
+#diagram .arrowheadPath {
+  fill: #333333; }
+
+#diagram .edgePath .path {
+  stroke: #333333;
+  stroke-width: 1.5px; }
+
+#diagram .edgeLabel {
+  background-color: #e8e8e8; }
+
+#diagram .cluster rect {
+  fill: #ffffde !important;
+  stroke: #aaaa33 !important;
+  stroke-width: 1px !important; }
+
+#diagram .cluster text {
+  fill: #333; }
+
+#diagram div.mermaidTooltip {
+  position: absolute;
+  text-align: center;
+  max-width: 200px;
+  padding: 2px;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 12px;
+  background: #ffffde;
+  border: 1px solid #aaaa33;
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 100; }
+
+#diagram .actor {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#diagram text.actor {
+  fill: black;
+  stroke: none; }
+
+#diagram .actor-line {
+  stroke: grey; }
+
+#diagram .messageLine0 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#diagram .messageLine1 {
+  stroke-width: 1.5;
+  stroke-dasharray: '2 2';
+  stroke: #333; }
+
+#diagram #arrowhead {
+  fill: #333; }
+
+#diagram #crosshead path {
+  fill: #333 !important;
+  stroke: #333 !important; }
+
+#diagram .messageText {
+  fill: #333;
+  stroke: none; }
+
+#diagram .labelBox {
+  stroke: #CCCCFF;
+  fill: #ECECFF; }
+
+#diagram .labelText {
+  fill: black;
+  stroke: none; }
+
+#diagram .loopText {
+  fill: black;
+  stroke: none; }
+
+#diagram .loopLine {
+  stroke-width: 2;
+  stroke-dasharray: '2 2';
+  stroke: #CCCCFF; }
+
+#diagram .note {
+  stroke: #aaaa33;
+  fill: #fff5ad; }
+
+#diagram .noteText {
+  fill: black;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 14px; }
+
+#diagram .activation0 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#diagram .activation1 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+#diagram .activation2 {
+  fill: #f4f4f4;
+  stroke: #666; }
+
+
+#diagram .section {
+  stroke: none;
+  opacity: 0.2; }
+
+#diagram .section0 {
+  fill: rgba(102, 102, 255, 0.49); }
+
+#diagram .section2 {
+  fill: #fff400; }
+
+#diagram .section1,
+#diagram .section3 {
+  fill: white;
+  opacity: 0.2; }
+
+#diagram .sectionTitle0 {
+  fill: #333; }
+
+#diagram .sectionTitle1 {
+  fill: #333; }
+
+#diagram .sectionTitle2 {
+  fill: #333; }
+
+#diagram .sectionTitle3 {
+  fill: #333; }
+
+#diagram .sectionTitle {
+  text-anchor: start;
+  font-size: 11px;
+  text-height: 14px; }
+
+
+#diagram .grid .tick {
+  stroke: lightgrey;
+  opacity: 0.3;
+  shape-rendering: crispEdges; }
+
+#diagram .grid path {
+  stroke-width: 0; }
+
+
+#diagram .today {
+  fill: none;
+  stroke: red;
+  stroke-width: 2px; }
+
+
+
+#diagram .task {
+  stroke-width: 2; }
+
+#diagram .taskText {
+  text-anchor: middle;
+  font-size: 11px; }
+
+#diagram .taskTextOutsideRight {
+  fill: black;
+  text-anchor: start;
+  font-size: 11px; }
+
+#diagram .taskTextOutsideLeft {
+  fill: black;
+  text-anchor: end;
+  font-size: 11px; }
+
+
+#diagram .taskText0,
+#diagram .taskText1,
+#diagram .taskText2,
+#diagram .taskText3 {
+  fill: white; }
+
+#diagram .task0,
+#diagram .task1,
+#diagram .task2,
+#diagram .task3 {
+  fill: #8a90dd;
+  stroke: #534fbc; }
+
+#diagram .taskTextOutside0,
+#diagram .taskTextOutside2 {
+  fill: black; }
+
+#diagram .taskTextOutside1,
+#diagram .taskTextOutside3 {
+  fill: black; }
+
+
+#diagram .active0,
+#diagram .active1,
+#diagram .active2,
+#diagram .active3 {
+  fill: #bfc7ff;
+  stroke: #534fbc; }
+
+#diagram .activeText0,
+#diagram .activeText1,
+#diagram .activeText2,
+#diagram .activeText3 {
+  fill: black !important; }
+
+
+#diagram .done0,
+#diagram .done1,
+#diagram .done2,
+#diagram .done3 {
+  stroke: grey;
+  fill: lightgrey;
+  stroke-width: 2; }
+
+#diagram .doneText0,
+#diagram .doneText1,
+#diagram .doneText2,
+#diagram .doneText3 {
+  fill: black !important; }
+
+
+#diagram .crit0,
+#diagram .crit1,
+#diagram .crit2,
+#diagram .crit3 {
+  stroke: #ff8888;
+  fill: red;
+  stroke-width: 2; }
+
+#diagram .activeCrit0,
+#diagram .activeCrit1,
+#diagram .activeCrit2,
+#diagram .activeCrit3 {
+  stroke: #ff8888;
+  fill: #bfc7ff;
+  stroke-width: 2; }
+
+#diagram .doneCrit0,
+#diagram .doneCrit1,
+#diagram .doneCrit2,
+#diagram .doneCrit3 {
+  stroke: #ff8888;
+  fill: lightgrey;
+  stroke-width: 2;
+  cursor: pointer;
+  shape-rendering: crispEdges; }
+
+#diagram .doneCritText0,
+#diagram .doneCritText1,
+#diagram .doneCritText2,
+#diagram .doneCritText3 {
+  fill: black !important; }
+
+#diagram .activeCritText0,
+#diagram .activeCritText1,
+#diagram .activeCritText2,
+#diagram .activeCritText3 {
+  fill: black !important; }
+
+#diagram .titleText {
+  text-anchor: middle;
+  font-size: 18px;
+  fill: black; }
+
+#diagram g.classGroup text {
+  fill: #9370DB;
+  stroke: none;
+  font-family: 'trebuchet ms', verdana, arial;
+  font-size: 10px; }
+
+#diagram g.classGroup rect {
+  fill: #ECECFF;
+  stroke: #9370DB; }
+
+#diagram g.classGroup line {
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram .classLabel .box {
+  stroke: none;
+  stroke-width: 0;
+  fill: #ECECFF;
+  opacity: 0.5; }
+
+#diagram .classLabel .label {
+  fill: #9370DB;
+  font-size: 10px; }
+
+#diagram .relation {
+  stroke: #9370DB;
+  stroke-width: 1;
+  fill: none; }
+
+#diagram #compositionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #compositionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #aggregationStart {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #aggregationEnd {
+  fill: #ECECFF;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #dependencyStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #dependencyEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #extensionStart {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram #extensionEnd {
+  fill: #9370DB;
+  stroke: #9370DB;
+  stroke-width: 1; }
+
+#diagram .commit-id,
+#diagram .commit-msg,
+#diagram .branch-label {
+  fill: lightgrey;
+  color: lightgrey; }
+</style><style>#diagram {
+    color: rgb(0, 0, 0);
+    font: 16px -apple-system, "system-ui", "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+  }</style><g transform="translate(-12, -12)"><g class="output"><g class="clusters"><g class="cluster" id="subGraph0" transform="translate(371.29718017578125,153.49203491210938)" style="opacity: 1;"><rect width="702.5943603515625" height="266.98406982421875" x="-351.29718017578125" y="-133.49203491210938"></rect><g class="label"><g transform="translate(0,0)"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"></div></foreignObject></g></g><text x="0" y="-119.49203491210938" fill="black" stroke="none" id="diagramText" style="text-anchor: middle;">function volumenoRoca</text></g></g><g class="edgePaths"><g class="edgePath" style="opacity: 1;"><path class="path" d="M371.29718017578125,83.99468994140625L371.29718017578125,108.99468994140625L371.29718017578125,133.99468994140625" marker-end="url(#arrowhead198)" style="fill:none"></path><defs><marker id="arrowhead198" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g><g class="edgePath" style="opacity: 1;"><path class="path" d="M371.29718017578125,172.9893798828125L371.29718017578125,197.9893798828125L371.7971801757813,223.4893798828125" marker-end="url(#arrowhead199)" style="fill:none"></path><defs><marker id="arrowhead199" viewBox="0 0 10 10" refX="9" refY="5" markerUnits="strokeWidth" markerWidth="8" markerHeight="6" orient="auto"><path d="M 0 0 L 10 5 L 0 10 z" class="arrowheadPath" style="stroke-width: 1; stroke-dasharray: 1, 0;"></path></marker></defs></g></g><g class="edgeLabels"><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g><g class="edgeLabel" transform="" style="opacity: 1;"><g transform="translate(0,0)" class="label"><foreignObject width="0" height="0"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;"><span class="edgeLabel"></span></div></foreignObject></g></g></g><g class="nodes"><g class="node" id="froml3c4tol3c85" transform="translate(371.29718017578125,64.49734497070312)" style="opacity: 1;"><rect rx="5" ry="5" x="-316.29718017578125" y="-19.497344970703125" width="632.5943603515625" height="38.99468994140625"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-306.29718017578125,-9.497344970703125)"><foreignObject width="612.5943603515625" height="18.99468994140625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let punto_inicial_cm = Number(document.getElementById('punto_inicial_cm').value);</div></foreignObject></g></g></g><g class="node" id="froml4c4tol4c81" transform="translate(371.29718017578125,153.49203491210938)" style="opacity: 1;"><rect rx="5" ry="5" x="-305.16741943359375" y="-19.497344970703125" width="610.3348388671875" height="38.99468994140625"></rect><g class="label" transform="translate(0,0)"><g transform="translate(-295.16741943359375,-9.497344970703125)"><foreignObject width="590.3348388671875" height="18.99468994140625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">let punto_final_cm = Number(document.getElementById('punto_final_cm').value);</div></foreignObject></g></g></g><g class="node" id="froml5c4tol5c45" transform="translate(371.29718017578125,242.48672485351562)" style="opacity: 1;"><polygon points="-19.497344970703125,0 325.57080078125,0 325.57080078125,-38.99468994140625 -19.497344970703125,-38.99468994140625 0,-19.497344970703125" transform="translate(-162.785400390625,19.497344970703125)" style="fill:#99FF99;"></polygon><g class="label" transform="translate(0,0)"><g transform="translate(-152.785400390625,-9.497344970703125)"><foreignObject width="305.57080078125" height="18.99468994140625"><div xmlns="http://www.w3.org/1999/xhtml" style="display: inline-block; white-space: nowrap;">return punto_final_cm - punto_inicial_cm;</div></foreignObject></g></g></g></g></g></g></svg>
