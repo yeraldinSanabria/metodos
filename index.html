@@ -160,26 +160,27 @@
                 <label for="generatriz">generatriz: </label>
                 <input type="number" id="generatriz" name="generatriz">
             </div>
-            <div class="ocultar" id="Roca">
-                <div>
-                    <!-- VALOR DE PUNTO INICIAL DE LA FIGURA -->
-                    <label for="punto_inicial_cm">punto inicial : </label>
-                    <input type="number" id="punto_inicial_cm" name="punto_inicial_cm">
-                </div>
-                <div>
-                    <!-- VALOR DE PUNTO FINAL DE LA FIGURA -->
-                    <label for="punto_final_cm">punto final : </label>
-                    <input type="number" id="punto_final_cm" name="punto_final_cm">
-                </div>
+        </div>
+        <div class="ocultar" id="roca">
+            <div>
+                <!-- VALOR DE PUNTO INICIAL DE LA FIGURA -->
+                <label for="punto_inicial_cm">punto inicial : </label>
+                <input type="number" id="punto_inicial_cm" name="punto_inicial_cm">
             </div>
+            <div>
+                <!-- VALOR DE PUNTO FINAL DE LA FIGURA -->
+                <label for="punto_final_cm">punto final : </label>
+                <input type="number" id="punto_final_cm" name="punto_final_cm">
+            </div>
+        </div>
 
-            <button onclick="calcular()">calcular</button>
-            <hr>
-            <article>
-                <p>Perimertro: <span id="resultadoPerimetro"></span> </p>
-                <p>Area: <span id="resultadoArea"></span> </p>
-                <p>volumen:<span id="resultadoVolumen"></span> </p>
-            </article>
+        <button onclick="calcular()">calcular</button>
+        <hr>
+        <article>
+            <p>Perimertro: <span id="resultadoPerimetro"></span> </p>
+            <p>Area: <span id="resultadoArea"></span> </p>
+            <p>volumen:<span id="resultadoVolumen"></span> </p>
+        </article>
     </main>
     <script>
         function verOcultar() {
@@ -223,6 +224,9 @@
                     break;
                 case 11:
                     document.getElementById('cono').classList.add('active');
+                    break;
+                case 12:
+                    document.getElementById('roca').classList.add('active');
                     break;
                 default:
                     break;
@@ -273,6 +277,9 @@
                 case 11:
                     document.getElementById('resultadoArea').textContent = areaCono()
                     document.getElementById('resultadoVolumen').textContent = volumenCono()
+                    break;
+                case 12:
+                    document.getElementById('resultadoVolumen').textContent = volumenoRoca()
                     break;
                 default:
                     break;
